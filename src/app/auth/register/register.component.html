@@ -1,8 +1,5 @@
 <div class="container">
   <form #registerForm="ngForm" class="form-signin" (ngSubmit)="register(registerForm)">
-    <div class="alert alert-danger" role="alert" *ngIf="showErrorMessage && registerForm.submitted">
-      Ошибка!
-    </div>
     <h2 class="form-signin-heading">Регистрация</h2>
     <label for="inputLogin" class="sr-only">Логин</label>
     <input type="text" id="inputLogin" class="form-control" placeholder="Логин" name="login" required autofocus
