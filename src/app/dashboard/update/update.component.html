@@ -1,0 +1,23 @@
+<div class="container">
+  <form #updateForm="ngForm" class="form-signin" (ngSubmit)="update()">
+
+    <label for="inputSurname" class="sr-only">Фамилия</label>
+    <input [(ngModel)]="user.surname" type="text" id="inputSurname" class="form-control" placeholder="Фамилия" name="surname">
+
+    <label for="inputName" class="sr-only">Имя</label>
+    <input [(ngModel)]="user.name" type="text" id="inputName" class="form-control" placeholder="Имя" name="name">
+
+    <label for="inputPatr" class="sr-only">Отчество</label>
+    <input [(ngModel)]="user.patronymic" type="text" id="inputPatr" class="form-control" placeholder="Отчество" name="patronymic">
+    <div class="text-white">Паспортные данные</div>
+
+    <label for="inputSeries" class="sr-only">Серия</label>
+    <input [(ngModel)]="user.series" type="text" id="inputSeries" class="form-control" placeholder="Серия" name="series">
+
+    <label for="inputNumber" class="sr-only">Номер</label>
+    <input [(ngModel)]="user.number" type="text" id="inputNumber" class="form-control" placeholder="Номер" name="number">
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Сохранить</button>
+  </form>
+
+</div>
